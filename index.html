@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Meu Amor</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body bgcolor="#f3dbc3">
+    <header>
+        <h1>Você é meu mundo 💜</h1>
+        <p>Esse site é só uma tentativa de mostrar o quanto você é especial pra mim.</p>
+    </header>
+
+    <main>
+        <section class="imagem-destaque">
+            <img src="img/casal-lindo.jpeg" alt="Foto especial">
+        </section>
+
+        <section class="elogios">
+            <h2>O que eu amo em você</h2>
+            <ul>
+                <li>Seu sorriso ilumina tudo ao redor.</li>
+                <li>Seu abraço é o lugar mais calmo do mundo.</li>
+                <li>Seu jeitinho único me encanta todos os dias.</li>
+                <li>Você é inteligente, forte, carinhosa, romântica e linda.</li>
+                <li>Quando penso no futuro, só consigo imaginar ao seu lado
+                    em um altar, me casando com a Mulher mais incrivel do mundo.</li>
+            </ul>
+        </section>
+
+        <section class="mensagem-final">
+            <h2>Minha mensagem pra você</h2>
+            <p>
+                Meu amor, você é a melhor parte de mim. Não consigo imaginar minha vida sem o seu carinho, seu apoio, sua risada e sua presença. Você é o meu presente mais precioso e cada momento com você é uma bênção.
+                <br><br>
+                Te amo mais do que palavras podem dizer 💜
+            </p>
+        </section>
+
+        <section class="questionario">
+            <h2>Qual nota você acha que eu te dou de 0 a 100?</h2>
+            <input type="number" id="nota" placeholder="Digite a sua resposta (0 a 100)" min="0">
+            <button onclick="verificarNota()">Enviar</button>
+        </section>
+        
+        <script>
+            function verificarNota() {
+                const nota = document.getElementById("nota").value;
+                
+                if (nota < 100) {
+                    alert("Resposta errada, e passou longe... Aumenta esse número");
+                } else if (nota == 100) {
+                    alert("Apenas isso? 😜");
+                } else if (nota > 100 || nota < 99999999999) {
+                    alert("Meu amor por você é infinito 💜");
+                } 
+            }
+        </script>
+    </main>
+
+    <footer>
+        <p>Com todo o amor do mundo, Vitor 💖</p>
+    </footer>
+</body>
+</html>
